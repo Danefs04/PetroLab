@@ -7,20 +7,44 @@ import "./Navbar.css";
 // Functions.
 export function Navbar() {
   return (
-    <nav>
-      <NavLink
-        className={({ isActive }) => (isActive ? "active" : "inactive")}
-        to="/"
-        end
-      >
-        Home
-      </NavLink>
-      <NavLink
-        className={({ isActive }) => (isActive ? "active" : "inactive")}
-        to="/about"
-      >
-        About
-      </NavLink>
-    </nav>
+    <div>
+      <div className="line"></div>
+      <nav className="Navbar">
+        <div className="NavHolder">
+          <NavLink
+            className={({ isActive }) => (isActive ? "active" : "inactive")}
+            to="/"
+            end
+          >
+            Inicio
+          </NavLink>
+          <NavLink
+            className={({ isActive }) => (isActive ? "active" : "inactive")}
+            to="/about"
+          >
+            Sobre el laboratorio
+          </NavLink>
+          <NavLink
+            className={({ isActive }) => (isActive ? "active" : "inactive")}
+            to="/thinsections"
+          >
+            Secciones delgadas
+          </NavLink>
+          <NavLink
+            className={({ isActive }) => (isActive ? "active" : "inactive")}
+            to="/handsamples"
+          >
+            Muestras de mano
+          </NavLink>
+          <NavLink
+            className={({ isActive }) => (isActive ? "active" : "inactive")}
+            to="/outcrops"
+          >
+            Afloramientos
+          </NavLink>
+        </div>
+      </nav>
+      <div className="line"></div>
+    </div>
   );
 }

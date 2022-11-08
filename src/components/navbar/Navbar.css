@@ -1,9 +1,32 @@
+.line {
+  background-color: black;
+  height: 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.Navbar {
+  display: flex;
+  align-items: center; /* Horizontal */
+  justify-content: center; /* Vertical */
+}
+
+.NavHolder {
+  width: 1000px;
+  display: flex;
+  align-items: center; /* Horizontal */
+  justify-content: space-between;
+  padding: 0 20px 0 20px;
+}
+
 .active {
   color: black;
   font-weight: bold;
+  text-decoration-line: none;
 }
 
 .inactive {
   color: black;
   font-weight: normal;
+  text-decoration-line: none;
 }
